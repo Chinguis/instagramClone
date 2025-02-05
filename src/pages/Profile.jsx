@@ -33,7 +33,9 @@ export default function Profile() {
             <p>Name: {profile.name} <img src={"/" + profile.profilePicture} alt="User's profile picture"/></p>
             : <p>This user does not exist.</p>
             }
-            {postElements}
+            <div className="postGrid">
+                {postElements}
+            </div>
         </>
     )
 }

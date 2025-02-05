@@ -1,4 +1,5 @@
-:root {
+/* Sample styles set by vite */
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,8 +66,75 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+body {
+  margin: 0;
+  padding: 1rem;
 }
+
+.postGrid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+  gap: 1rem;
+}
+
+
 
 .post {
   border: 5px solid black;
+  width: 100%;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.profilePictureContainer {
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+}
+
+.profilePictureContainer > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.userName {
+  flex-grow: 1;
+}
+
+.caption {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.imageContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageContainer > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.postFooter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.postFooter > button {
+  background-color: inherit;
+  border: none;
 }

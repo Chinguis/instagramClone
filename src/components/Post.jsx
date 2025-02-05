@@ -16,23 +16,28 @@ export default function Post({
 
     return (
         <div className="post">
-            <div>
+            <div className="postHeader">
                 <Link to={"/profile/" + userId}>
-                    <img src={"/" + userProfilePicture} alt="user profile picture" />
+                    <div className="profilePictureContainer">
+                        <img src={"/" + userProfilePicture} alt="user profile picture" />
+                    </div>
                 </Link>
-                <span>{userName}</span>
+                <span className="userName">{userName}</span>
                 <span>{datePosted}</span>
             </div>
+            <hr></hr>
+            <div className="caption">{caption}</div>
             <div>
-                <span>{caption}</span>
+                <div className="imageContainer">
+                    <img src={"/" + image} alt="post image" />
+                </div>
             </div>
-            <div>
-                <img src={"/" + image} alt="post image" />
+            <div className="postFooter">
+                <span>Likes : {likes}</span>
+                <button onClick={handleClick}>
+                    <img src={liked ? thumbsUpClicked : thumbsUp} alt="Like"></img>
+                </button>
             </div>
-            <span>Likes : {likes}</span>
-            <button onClick={handleClick}>
-                <img src={liked ? thumbsUpClicked : thumbsUp} alt="Like"></img>
-            </button>
         </div>
     )
 }
