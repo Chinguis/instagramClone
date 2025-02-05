@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "userId": 1,
+        "caption": "A beautiful bird!",
+        "image": "bird.jpg",
+        "likes": 213,
+        "datePosted": "15 Jan 2025"
+    },
+    {
+        "id": 2,
+        "userId": 2,
+        "caption": "Enjoying a cup of coffee!",
+        "image": "coffee.jpg",
+        "likes": 150,
+        "datePosted": "20 Dec 2024"
+    },
+    {
+        "id": 3,
+        "userId": 1,
+        "caption": "Lovely couple!",
+        "image": "couple.png",
+        "likes": 98,
+        "datePosted": "5 Nov 2024"
+    },
+    {
+        "id": 4,
+        "userId": 3,
+        "caption": "Playing cricket!",
+        "image": "cricket.jpg",
+        "likes": 175,
+        "datePosted": "18 Oct 2024"
+    },
+    {
+        "id": 5,
+        "userId": 2,
+        "caption": "Cute dog!",
+        "image": "dog.jpg",
+        "likes": 200,
+        "datePosted": "7 Sep 2024"
+    },
+    {
+        "id": 6,
+        "userId": 4,
+        "caption": "A man exploring the city.",
+        "image": "man.jpg",
+        "likes": 120,
+        "datePosted": "25 Aug 2024"
+    },
+    {
+        "id": 7,
+        "userId": 3,
+        "caption": "Beautiful mosque!",
+        "image": "mosque.jpg",
+        "likes": 130,
+        "datePosted": "10 Jul 2024"
+    },
+    {
+        "id": 8,
+        "userId": 4,
+        "caption": "Nature is amazing!",
+        "image": "nature.jpg",
+        "likes": 110,
+        "datePosted": "15 Jun 2024"
+    },
+    {
+        "id": 9,
+        "userId": 1,
+        "caption": "A swan swimming!",
+        "image": "swan.jpg",
+        "likes": 140,
+        "datePosted": "30 May 2024"
+    },
+    {
+        "id": 10,
+        "userId": 2,
+        "caption": "A zebra in the wild!",
+        "image": "zebra.jpg",
+        "likes": 180,
+        "datePosted": "12 Apr 2024"
+    }
+]

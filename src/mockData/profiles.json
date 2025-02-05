@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Johnny",
+        "profilePicture": "johnny.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Alice",
+        "profilePicture": "alice.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bob",
+        "profilePicture": "bob.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Eve",
+        "profilePicture": "eve.jpg"
+    }
+]
