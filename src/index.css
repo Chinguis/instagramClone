@@ -68,24 +68,71 @@ button:focus-visible {
   }
 } */
 
+/* Global */
 body {
   margin: 0;
-  padding: 1rem;
+  background-color: black;
+  color: white;
 }
 
+/* Header */
+header {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.logoContainer {
+  height: 2rem;
+  width: 10rem;
+  overflow: hidden;
+}
+
+.logoContainer > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Profile blob */
+.profile {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  gap: 1rem;
+  border: 5px solid white;
+  box-sizing: border-box;
+}
+
+.profile > span {
+  font-size: 2rem;
+}
+
+.bigProfilePicture {
+  height: 10rem;
+  width: 10rem;
+  overflow: hidden;
+}
+
+.bigProfilePicture > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Post grid and posts */
 .postGrid {
   margin: 0;
-  padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  max-width: 1000px;
+  margin: auto;
 }
 
-
-
 .post {
-  border: 5px solid black;
   width: 100%;
+  border: 5px solid white;
+  box-sizing: border-box;
 }
 
 .postHeader {

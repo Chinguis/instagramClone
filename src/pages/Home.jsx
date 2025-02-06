@@ -1,5 +1,6 @@
 import Post from '../components/Post'
 import { getPosts } from '../services/service'
+import logo from '../../public/logo.png'
 
 export default function Home() {
     const posts = getPosts();
@@ -22,7 +23,11 @@ export default function Home() {
 
     return (
         <>
-            <p>Home component</p>
+            <header>
+                <div className="logoContainer">
+                    <img src={logo} alt="Clonestagram" />
+                </div>
+            </header>
             <div className="postGrid">
                 {postElements}
             </div>

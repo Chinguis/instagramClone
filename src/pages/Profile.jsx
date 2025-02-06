@@ -1,6 +1,7 @@
 import { useParams } from 'react-router'
 import { getPostsByUserId, getProfile } from '../services/service'
 import Post from '../components/Post'
+import logo from '../../public/logo.png'
 
 export default function Profile() {
     const params = useParams();
@@ -28,11 +29,22 @@ export default function Profile() {
 
     return (
         <>
-            <p>Profile component</p>
-            {profile ? 
-            <p>Name: {profile.name} <img src={"/" + profile.profilePicture} alt="User's profile picture"/></p>
-            : <p>This user does not exist.</p>
-            }
+            <header>
+                <div className="logoContainer">
+                    <img src={logo} alt="Clonestagram" />
+                </div>
+            </header>
+            <div className="profile">
+                {profile ?
+                <>
+                <div className="bigProfilePicture">
+                    <img src={"/" + profile.profilePicture} alt="User's profile picture" />
+                </div>
+                <span>{profile.name}</span>
+                </>
+                : <span>This user does not exist.</span>
+                }
+            </div>
             <div className="postGrid">
                 {postElements}
             </div>
