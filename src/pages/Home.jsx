@@ -1,6 +1,7 @@
 import Post from '../components/Post'
 import { getPosts } from '../services/service'
 import logo from '../../public/logo.png'
+import { Link } from 'react-router';
 
 export default function Home() {
     const posts = getPosts();
@@ -24,9 +25,11 @@ export default function Home() {
     return (
         <>
             <header>
-                <div className="logoContainer">
-                    <img src={logo} alt="Clonestagram" />
-                </div>
+                <Link to="/home">
+                    <div className="logoContainer">
+                        <img src={logo} alt="Clonestagram" />
+                    </div>
+                </Link>
             </header>
             <div className="postGrid">
                 {postElements}

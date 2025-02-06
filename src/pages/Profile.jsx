@@ -2,6 +2,7 @@ import { useParams } from 'react-router'
 import { getPostsByUserId, getProfile } from '../services/service'
 import Post from '../components/Post'
 import logo from '../../public/logo.png'
+import { Link } from 'react-router'
 
 export default function Profile() {
     const params = useParams();
@@ -30,9 +31,11 @@ export default function Profile() {
     return (
         <>
             <header>
-                <div className="logoContainer">
-                    <img src={logo} alt="Clonestagram" />
-                </div>
+                <Link to="/home">
+                    <div className="logoContainer">
+                        <img src={logo} alt="Clonestagram" />
+                    </div>
+                </Link>
             </header>
             <div className="profile">
                 {profile ?

@@ -71,13 +71,14 @@ button:focus-visible {
 /* Global */
 body {
   margin: 0;
-  background-color: black;
-  color: white;
+  background-color: #020E08;
+  color: #E0E1DD;
 }
 
 /* Header */
 header {
   display: flex;
+  padding: 1rem;
   max-width: 1000px;
   margin: auto;
 }
@@ -97,11 +98,14 @@ header {
 /* Profile blob */
 .profile {
   display: flex;
-  max-width: 1000px;
-  margin: auto;
   gap: 1rem;
-  border: 5px solid white;
+  padding: 1rem;
   box-sizing: border-box;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: #1B263B;
 }
 
 .profile > span {
@@ -125,14 +129,13 @@ header {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  grid-gap: 10px;
   max-width: 1000px;
   margin: auto;
 }
 
 .post {
-  width: 100%;
-  border: 5px solid white;
-  box-sizing: border-box;
+  background-color: #1B263B;
 }
 
 .postHeader {
@@ -166,6 +169,7 @@ header {
 .imageContainer {
   width: 100%;
   overflow: hidden;
+  aspect-ratio: 1 / 1;
 }
 
 .imageContainer > img {
