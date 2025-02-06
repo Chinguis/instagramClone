@@ -10,6 +10,8 @@ export default function Post({
 }) {
     const [liked, setLiked] = useState(false);
 
+    const likeCount = liked ? likes + 1 : likes;
+
     function handleClick() {
         setLiked(prev => !prev);
     }
@@ -33,7 +35,7 @@ export default function Post({
                 </div>
             </div>
             <div className="postFooter">
-                <span>Likes : {likes}</span>
+                <span>Likes : {likeCount}</span>
                 <button onClick={handleClick}>
                     <img src={liked ? thumbsUpClicked : thumbsUp} alt="Like"></img>
                 </button>
