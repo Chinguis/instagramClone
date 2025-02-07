@@ -24,7 +24,9 @@ export default function Post({
                         <img src={"/" + userProfilePicture} alt="user profile picture" />
                     </div>
                 </Link>
-                <span className="userName">{userName}</span>
+                <Link to={"/profile/" + userId} className="userName">
+                    <span>{userName}</span>
+                </Link>
                 <span>{datePosted}</span>
             </div>
             <hr></hr>
@@ -37,7 +39,10 @@ export default function Post({
             <div className="postFooter">
                 <span>Likes : {likeCount}</span>
                 <button onClick={handleClick}>
-                    <img src={liked ? thumbsUpClicked : thumbsUp} alt="Like"></img>
+                    {liked ?
+                    <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24"}}>favorite</span>
+                    : <span className="material-symbols-outlined">favorite</span>
+                    }
                 </button>
             </div>
         </div>

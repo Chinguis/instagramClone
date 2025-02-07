@@ -31,6 +31,7 @@ export default function Home() {
                     </div>
                 </Link>
             </header>
+            <hr></hr>
             <div className="postGrid">
                 {postElements}
             </div>

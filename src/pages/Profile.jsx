@@ -37,6 +37,7 @@ export default function Profile() {
                     </div>
                 </Link>
             </header>
+            <hr></hr>
             <div className="profile">
                 {profile ?
                 <>
