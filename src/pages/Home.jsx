@@ -25,13 +25,15 @@ export default function Home() {
     return (
         <>
             <header>
-                <Link to="/home">
-                    <div className="logoContainer">
-                        <img src={logo} alt="Clonestagram" />
-                    </div>
-                </Link>
+                <div className="topBar">
+                    <Link to="/home">
+                        <div className="logoContainer">
+                            <img src={logo} alt="Clonestagram" />
+                        </div>
+                    </Link>
+                </div>
+                <hr></hr>
             </header>
-            <hr></hr>
             <div className="postGrid">
                 {postElements}
             </div>
