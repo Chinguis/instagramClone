@@ -37,13 +37,13 @@ export default function Post({
                 </div>
             </div>
             <div className="postFooter">
-                <span>Likes : {likeCount}</span>
                 <button onClick={handleClick}>
                     {liked ?
-                    <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24"}}>favorite</span>
-                    : <span className="material-symbols-outlined">favorite</span>
+                    <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48", fontSize: "2rem"}}>favorite</span>
+                    : <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48", fontSize: "2rem"}}>favorite</span>
                     }
                 </button>
+                <span>{likeCount}</span>
             </div>
         </div>
     )
