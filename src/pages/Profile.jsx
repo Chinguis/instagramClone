@@ -12,7 +12,7 @@ export default function Profile() {
     const [posts, setPosts] = useState([]);
     
     useEffect(() => {
-        fetch("http://localhost:8080/api/profile/" + userId, {
+        fetch("http://localhost:8080/api/profile/public/" + userId, {
             method: "GET"
         }).then(response => {
             if (!response.ok) {
@@ -26,7 +26,7 @@ export default function Profile() {
     }, []);
 
     useEffect(() => {
-        fetch("http://localhost:8080/api/post/" + userId, {
+        fetch("http://localhost:8080/api/post/public/" + userId, {
             method: "GET"
         }).then(response => {
             if (!response.ok) {

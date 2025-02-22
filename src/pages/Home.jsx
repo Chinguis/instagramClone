@@ -7,7 +7,7 @@ export default function Home() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8080/api/post/all", {
+        fetch("http://localhost:8080/api/post/public/all", {
             method: "GET",
         }).then(response => {
             if (!response.ok) {
