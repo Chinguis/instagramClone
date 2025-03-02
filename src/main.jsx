@@ -5,6 +5,7 @@ import './index.css'
 import Home from './pages/Home.jsx'
 import Profile from './pages/Profile.jsx'
 import CreateAccount from './pages/CreateAccount.jsx';
+import Login from './pages/Login.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/home" element={<Home />} />
         <Route path="/profile/:userId" element={<Profile />} />
         <Route path="/createAccount" element={<CreateAccount />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

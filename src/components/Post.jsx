@@ -13,7 +13,33 @@ export default function Post({
     const likeCount = liked ? likes + 1 : likes;
 
     function handleClick() {
-        setLiked(prev => !prev);
+        if (liked) {
+            fetch("http://localhost:8080/api/post/unlike/" + id, {
+                method: "POST",
+                credentials: "include",
+            }).then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                setLiked(false);
+            })
+            .catch(error => {
+                console.log("Error:", error);
+            });
+        } else {
+            fetch("http://localhost:8080/api/post/like/" + id, {
+                method: "POST",
+                credentials: "include",
+            }).then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                setLiked(true);
+            })
+            .catch(error => {
+                console.log("Error:", error);
+            });
+        }
     }
 
     return (
